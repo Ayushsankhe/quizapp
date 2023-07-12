@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".quizquestions">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#363A43"
+        tools:text="which country does this flag belong to ?"/>
+    <ImageView
+        android:id="@+id/imagequestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/indianflag"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Quiz Image "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="0dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:layout_weight="1"
+            android:max="9"
+            android:minHeight="50dp"
+            android:progress="9"
+            />
+        <TextView
+            android:id="@+id/progressbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:text="0/9"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/optionone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_background"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:gravity="center"
+        tools:text="apple"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/optiontwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_background"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:gravity="center"
+        tools:text="apple"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/optionthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_background"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:gravity="center"
+        tools:text="apple"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/optionfour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_background"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:gravity="center"
+        tools:text="apple"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/buttonsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#30332E"
+        android:text="SUBMIT"
+        android:layout_margin="8dp"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
+</ScrollView>
